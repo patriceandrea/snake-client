@@ -12,17 +12,20 @@ const setupInput = function (conn) {
 };
 
 
+
 const handleUserInput = function (key) {
   if (key === '\u0003') {
     process.exit();
-  } else if (key === "w") {
+  } if (key === "w") {
     connection.write('Move: up');
-  } else if (key === "a") {
+  } if (key === "a") {
     connection.write('Move: left');
-  } else if (key === "s") {
+  } if (key === "s") {
     connection.write('Move: down');
-  } else if (key === "d") {
+  } if (key === "d") {
     connection.write('Move: right');
+  } if (key === "p") {
+    connection.write('Say: Almost done!!');
   }
 };
 
